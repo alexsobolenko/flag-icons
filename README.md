@@ -11,8 +11,8 @@ of a country) to an empty `<span>`. If you want to have a squared version flag
 then add the class `flag-icon-squared` as well. Example:
 
 ```html
-<span class="flag-icon flag-icon-gr"></span>
-<span class="flag-icon flag-icon-gr flag-icon-squared"></span>
+<span class="flag-icon flag-icon-sun"></span>
+<span class="flag-icon flag-icon-sun flag-icon-squared"></span>
 ```
 
 You could also apply this to any element, but in that case you'll have to use the
@@ -216,7 +216,7 @@ The project is compiled using SASS.
 * 'pan' - Panama
 * 'pcn' - Pitcairn
 * 'per' - Peru
-* 'phl' - Phillipines
+* 'phl' - Philippines
 * 'plw' - Palau
 * 'png' - Papua New Guinea
 * 'pol' - Poland
@@ -276,7 +276,7 @@ The project is compiled using SASS.
 * 'ukr' - Ukraine
 * 'umi' - United States Minor Outlying Islands
 * 'ury' - Uruguay
-* 'usa' - USA
+* 'usa' - United States of America (USA)
 * 'uzb' - Uzbekistan
 * 'vat' - Vanuatu
 * 'vct' - Vatican

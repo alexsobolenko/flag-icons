@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flag Icons</title>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Exo+2:400,700&amp;subset=cyrillic" rel="stylesheet">  -->
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Montserrat:400,700" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/flag-icon.css">
+  <style>
+    body, html {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #FAFAFA;
+    }
+    pre, .code, .cgreen, .cblue, .cred {
+      font-family: 'Inconsolata', monospace;
+    }
+    pre {
+      background-color: #E8F5E9;
+    }
+    .link {
+      margin: 1rem auto;
+      text-align: center;
+      display: block;
+      width: 150px;
+      height: 40px;
+      line-height: 40px;
+      text-decoration: none;
+      color: #fff;
+      border: 1px solid #222;
+      border-radius: 3px;
+      box-shadow: 0 0 10px 0 #222;
+      background-color: #546E7A;
+    }
+    .link:hover {
+      box-shadow: 0 0 7px -2px #222;
+    }
+    .link:active {
+      color: #222;
+      background-color: #ECEFF1;
+    }
+    .mrg {
+      margin: .3rem;
+    }
+    h1 {
+      font-size: 3.5rem;
+      text-align: center;
+      display: block;
+      width: 700px;
+      margin: 2rem auto;
+    }
+    h3 {
+      font-size: 1.6rem;
+      text-align: center;
+      display: block;
+      width: 700px;
+      margin: 1rem auto;
+      text-decoration: underline;
+    }
+    .block {
+      display: block;
+      width: 900px;
+      margin: .5rem auto;
+    }
+    .block p {
+      text-align: justify;
+    }
+    .block p:first-letter {
+      margin-left: 1rem;
+    }
+    .block ul {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -o-flex-direction: column;
+      flex-direction: column;
+      -ms-align-items: center;
+      align-items: center;
+    }
+    .block ul li {
+      display: block;
+      width: 600px;
+      padding: .4rem;
+    }
+    .block ul li:nth-child(even) {
+      background-color: #ECEFF1;
+    }
+    .block ul li:nth-child(odd) {
+      background-color: #E0F2F1;
+    }
+    .block ul li span {
+      margin-right: .5rem;
+    }
+    .code {
+      font-weight: 700;
+    }
+    .cgreen {
+      color: #1B5E20;
+    }
+    .cblue {
+      color: #0D47A1;
+    }
+    .cred {
+      color: #b71c1c;
+    }
+  </style>
+</head>
+<body>
+  <h1>Flag Icons</h1>
+  <a href="https://github.com/alexsobolenko/flag-icons/archive/master.zip" class="link">Download</a>
+  <h3>Description</h3>
+  <div class="block">
+      <p>A collection of all country flags in SVG — plus the CSS for easier integration.</p>
+
+      <p>For using the flags inline with text add the classes <span class="code">.flag-icon</span> and <span class="code">.flag-icon-xxx</span> (where <span class="code">xxx</span> is the <a href="https://www.iso.org/obp/ui/#search/code/">ISO 3166-1-alpha-3 code</a> to an empty <span class="code">&lt;span&gt;</span>. If you want to have a squared version flag then add the class <span class="code">.flag-icon-squared</span> as well. Example:</p>
+
+      <pre>
+
+        &lt;<span class="cgreen">span</span> <span class="cblue">class</span>="<span class="code">flag-icon flag-icon-sun</span>"&gt;&lt;/<span class="cgreen">span</span>&gt;
+        &lt;<span class="cgreen">span</span> <span class="cblue">class</span>="<span class="code">flag-icon flag-icon-sun flag-icon-squared</span>"&gt;&lt;/<span class="cgreen">span</span>&gt;
+      </pre>
+
+      <p><b>Result:</b> <span class="flag-icon flag-icon-sun mrg"></span> <span class="flag-icon flag-icon-sun flag-icon-squared mrg"></span></p>
+
+      <p>You could also apply this to any element, but in that case you'll have to use the <span class="code">flag-icon-background</span> instead of <span class="code">flag-icon</span> and you're set. This will add the correct background with the following CSS properties:</p>
+
+      <pre>
+
+        <span class="cgreen">background-size</span>: <span class="cred">contain</span>;
+        <span class="cgreen">background-position</span>: <span class="cred">50%</span>;
+        <span class="cgreen">background-repeat</span>: <span class="cred">no-repeat</span>;
+      </pre>
+
+      <p>Which means that the flag is just going to appear in the middle of an element, so you will have to set manually the correct size of 4 by 3 ratio or if it's squared add also the <span class="code">flag-icon-squared</span> class.</p>
+
+      <p>Many thanks to <a href="https://github.com/lipis">Lipis</a> for his repository, from which almost all the content was taken. Some flags have been added or changed.</p>
+      <p>The alpha-2 code for alpha-3 has been replaced, and for some regions have been added alpha-3 like codes.</p>
+      <p>The project is compiled using SASS.</p>
+  </div>
+  <h3>List of flags</h3>
+  <div class="block">
+    <ul>
+      <li><span class="flag-icon flag-icon-abw"></span><span class="code">abw</span> - Aruba</li>
+      <li><span class="flag-icon flag-icon-afg"></span><span class="code">afg</span> - Afghanistan</li>
+      <li><span class="flag-icon flag-icon-ago"></span><span class="code">ago</span> - Angola</li>
+      <li><span class="flag-icon flag-icon-aia"></span><span class="code">aia</span> - Anguilla</li>
+      <li><span class="flag-icon flag-icon-ala"></span><span class="code">ala</span> - Åland Islands</li>
+      <li><span class="flag-icon flag-icon-alb"></span><span class="code">alb</span> - Albania</li>
+      <li><span class="flag-icon flag-icon-and"></span><span class="code">and</span> - Andorra</li>
+      <li><span class="flag-icon flag-icon-are"></span><span class="code">are</span> - United Arab Emirates</li>
+      <li><span class="flag-icon flag-icon-arg"></span><span class="code">arg</span> - Argentina</li>
+      <li><span class="flag-icon flag-icon-arm"></span><span class="code">arm</span> - Armenia</li>
+      <li><span class="flag-icon flag-icon-asm"></span><span class="code">asm</span> - American Samoa</li>
+      <li><span class="flag-icon flag-icon-ata"></span><span class="code">ata</span> - Antarctica</li>
+      <li><span class="flag-icon flag-icon-atf"></span><span class="code">atf</span> - French Southern Territories</li>
+      <li><span class="flag-icon flag-icon-atg"></span><span class="code">atg</span> - Antigua and Barbuda</li>
+      <li><span class="flag-icon flag-icon-aus"></span><span class="code">aus</span> - Australia</li>
+      <li><span class="flag-icon flag-icon-aut"></span><span class="code">aut</span> - Austria</li>
+      <li><span class="flag-icon flag-icon-aze"></span><span class="code">aze</span> - Azerbaijan</li>
+      <li><span class="flag-icon flag-icon-bdi"></span><span class="code">bdi</span> - Burundi</li>
+      <li><span class="flag-icon flag-icon-bel"></span><span class="code">bel</span> - Belgium</li>
+      <li><span class="flag-icon flag-icon-ben"></span><span class="code">ben</span> - Benin</li>
+      <li><span class="flag-icon flag-icon-bes"></span><span class="code">bes</span> - Bonaire, Sint Eustatius and Saba</li>
+      <li><span class="flag-icon flag-icon-bfa"></span><span class="code">bfa</span> - Burkina Faso</li>
+      <li><span class="flag-icon flag-icon-bgd"></span><span class="code">bgd</span> - Bangladesh</li>
+      <li><span class="flag-icon flag-icon-bgr"></span><span class="code">bgr</span> - Bulgaria</li>
+      <li><span class="flag-icon flag-icon-bhr"></span><span class="code">bhr</span> - Bahrain</li>
+      <li><span class="flag-icon flag-icon-bhs"></span><span class="code">bhs</span> - Bahamas</li>
+      <li><span class="flag-icon flag-icon-bih"></span><span class="code">bih</span> - Bosnia and Herzegovina</li>
+      <li><span class="flag-icon flag-icon-blm"></span><span class="code">blm</span> - Saint Barthélemy</li>
+      <li><span class="flag-icon flag-icon-blr"></span><span class="code">blr</span> - Belarus</li>
+      <li><span class="flag-icon flag-icon-blz"></span><span class="code">blz</span> - Belize</li>
+      <li><span class="flag-icon flag-icon-bmu"></span><span class="code">bmu</span> - Bermuda</li>
+      <li><span class="flag-icon flag-icon-bol"></span><span class="code">bol</span> - Bolivia (Plurinational State of Bolivia)</li>
+      <li><span class="flag-icon flag-icon-bra"></span><span class="code">bra</span> - Brasil</li>
+      <li><span class="flag-icon flag-icon-brb"></span><span class="code">brb</span> - Barbados</li>
+      <li><span class="flag-icon flag-icon-brn"></span><span class="code">brn</span> - Brunei Darussalam</li>
+      <li><span class="flag-icon flag-icon-btn"></span><span class="code">btn</span> - Bhutan</li>
+      <li><span class="flag-icon flag-icon-bvt"></span><span class="code">bvt</span> - Bouvet Island</li>
+      <li><span class="flag-icon flag-icon-bwa"></span><span class="code">bwa</span> - Botswana</li>
+      <li><span class="flag-icon flag-icon-caf"></span><span class="code">caf</span> - Central African Republic</li>
+      <li><span class="flag-icon flag-icon-can"></span><span class="code">can</span> - Canada</li>
+      <li><span class="flag-icon flag-icon-cat"></span><span class="code">cat</span> - Catalonia (autonomous community in Spain)</li>
+      <li><span class="flag-icon flag-icon-cck"></span><span class="code">cck</span> - Cocos (Keeling) Islands</li>
+      <li><span class="flag-icon flag-icon-che"></span><span class="code">che</span> - Switzerland</li>
+      <li><span class="flag-icon flag-icon-chl"></span><span class="code">chl</span> - Chile</li>
+      <li><span class="flag-icon flag-icon-chn"></span><span class="code">chn</span> - China (People's Republic of China)</li>
+      <li><span class="flag-icon flag-icon-civ"></span><span class="code">civ</span> - Côte d'Ivoire</li>
+      <li><span class="flag-icon flag-icon-cmr"></span><span class="code">cmr</span> - Cameroon</li>
+      <li><span class="flag-icon flag-icon-cod"></span><span class="code">cod</span> - Congo (Democratic Republic of the Congo)</li>
+      <li><span class="flag-icon flag-icon-cog"></span><span class="code">cog</span> - Congo (Congo-Brazzaville)</li>
+      <li><span class="flag-icon flag-icon-cok"></span><span class="code">cok</span> - Cook Islands</li>
+      <li><span class="flag-icon flag-icon-col"></span><span class="code">col</span> - Colombia</li>
+      <li><span class="flag-icon flag-icon-com"></span><span class="code">com</span> - Comoros</li>
+      <li><span class="flag-icon flag-icon-cpv"></span><span class="code">cpv</span> - Cabo Verde</li>
+      <li><span class="flag-icon flag-icon-cri"></span><span class="code">cri</span> - Costa Rica</li>
+      <li><span class="flag-icon flag-icon-cub"></span><span class="code">cub</span> - Cuba</li>
+      <li><span class="flag-icon flag-icon-cuw"></span><span class="code">cuw</span> - Curaçao</li>
+      <li><span class="flag-icon flag-icon-cxr"></span><span class="code">cxr</span> - Christmas Island</li>
+      <li><span class="flag-icon flag-icon-cym"></span><span class="code">cym</span> - Cayman Islands</li>
+      <li><span class="flag-icon flag-icon-cyp"></span><span class="code">cyp</span> - Cyprus</li>
+      <li><span class="flag-icon flag-icon-cze"></span><span class="code">cze</span> - Czech Republic</li>
+      <li><span class="flag-icon flag-icon-deu"></span><span class="code">deu</span> - Germany (Federal Republic of Germany)</li>
+      <li><span class="flag-icon flag-icon-dji"></span><span class="code">dji</span> - Djibouti</li>
+      <li><span class="flag-icon flag-icon-dma"></span><span class="code">dma</span> - Dominica</li>
+      <li><span class="flag-icon flag-icon-dnk"></span><span class="code">dnk</span> - Denmark</li>
+      <li><span class="flag-icon flag-icon-dom"></span><span class="code">dom</span> - Dominican Republic</li>
+      <li><span class="flag-icon flag-icon-dza"></span><span class="code">dza</span> - Algeria</li>
+      <li><span class="flag-icon flag-icon-ecu"></span><span class="code">ecu</span> - Ecuador</li>
+      <li><span class="flag-icon flag-icon-egy"></span><span class="code">egy</span> - Egypt</li>
+      <li><span class="flag-icon flag-icon-eng"></span><span class="code">eng</span> - England (country that is part of the United Kingdom)</li>
+      <li><span class="flag-icon flag-icon-eri"></span><span class="code">eri</span> - Eritrea</li>
+      <li><span class="flag-icon flag-icon-esh"></span><span class="code">esh</span> - Western Sahara</li>
+      <li><span class="flag-icon flag-icon-esp"></span><span class="code">esp</span> - Spain</li>
+      <li><span class="flag-icon flag-icon-est"></span><span class="code">est</span> - Estonia</li>
+      <li><span class="flag-icon flag-icon-eth"></span><span class="code">eth</span> - Ethiopia</li>
+      <li><span class="flag-icon flag-icon-eun"></span><span class="code">eun</span> - European Union (EU)</li>
+      <li><span class="flag-icon flag-icon-fin"></span><span class="code">fin</span> - Finland</li>
+      <li><span class="flag-icon flag-icon-fji"></span><span class="code">fji</span> - Fiji</li>
+      <li><span class="flag-icon flag-icon-flk"></span><span class="code">flk</span> - Falkland Islands (Malvinas)</li>
+      <li><span class="flag-icon flag-icon-fra"></span><span class="code">fra</span> - France</li>
+      <li><span class="flag-icon flag-icon-fro"></span><span class="code">fro</span> - Faroe Islands</li>
+      <li><span class="flag-icon flag-icon-fsm"></span><span class="code">fsm</span> - Micronesia (Federated States of Micronesia)</li>
+      <li><span class="flag-icon flag-icon-gab"></span><span class="code">gab</span> - Gabon</li>
+      <li><span class="flag-icon flag-icon-gbr"></span><span class="code">gbr</span> - United Kingdom of Great Britain and Northern Ireland</li>
+      <li><span class="flag-icon flag-icon-geo"></span><span class="code">geo</span> - Georgia</li>
+      <li><span class="flag-icon flag-icon-ggy"></span><span class="code">ggy</span> - Guernsey</li>
+      <li><span class="flag-icon flag-icon-gha"></span><span class="code">gha</span> - Ghana</li>
+      <li><span class="flag-icon flag-icon-gib"></span><span class="code">gib</span> - Gibraltar</li>
+      <li><span class="flag-icon flag-icon-gin"></span><span class="code">gin</span> - Guinea</li>
+      <li><span class="flag-icon flag-icon-glp"></span><span class="code">glp</span> - Guadeloupe</li>
+      <li><span class="flag-icon flag-icon-gmb"></span><span class="code">gmb</span> - Gambia</li>
+      <li><span class="flag-icon flag-icon-gnb"></span><span class="code">gnb</span> - Guinea-Bissau</li>
+      <li><span class="flag-icon flag-icon-gnq"></span><span class="code">gnq</span> - Equatorial Guinea</li>
+      <li><span class="flag-icon flag-icon-grc"></span><span class="code">grc</span> - Greece</li>
+      <li><span class="flag-icon flag-icon-grd"></span><span class="code">grd</span> - Grenada</li>
+      <li><span class="flag-icon flag-icon-grl"></span><span class="code">grl</span> - Greenland</li>
+      <li><span class="flag-icon flag-icon-gtm"></span><span class="code">gtm</span> - Guatemala</li>
+      <li><span class="flag-icon flag-icon-guf"></span><span class="code">guf</span> - French Guiana</li>
+      <li><span class="flag-icon flag-icon-gum"></span><span class="code">gum</span> - Guam</li>
+      <li><span class="flag-icon flag-icon-guy"></span><span class="code">guy</span> - Guyana</li>
+      <li><span class="flag-icon flag-icon-hkg"></span><span class="code">hkg</span> - Hong Kong (Special Administrative Region of the China)</li>
+      <li><span class="flag-icon flag-icon-hmd"></span><span class="code">hmd</span> - Heard Island and McDonald Islands</li>
+      <li><span class="flag-icon flag-icon-hnd"></span><span class="code">hnd</span> - Honduras</li>
+      <li><span class="flag-icon flag-icon-hrv"></span><span class="code">hrv</span> - Croatia</li>
+      <li><span class="flag-icon flag-icon-hti"></span><span class="code">hti</span> - Haiti</li>
+      <li><span class="flag-icon flag-icon-hun"></span><span class="code">hun</span> - Hungary</li>
+      <li><span class="flag-icon flag-icon-idn"></span><span class="code">idn</span> - Indonesia</li>
+      <li><span class="flag-icon flag-icon-imn"></span><span class="code">imn</span> - Isle of Man</li>
+      <li><span class="flag-icon flag-icon-ind"></span><span class="code">ind</span> - India</li>
+      <li><span class="flag-icon flag-icon-iot"></span><span class="code">iot</span> - British Indian Ocean Territory</li>
+      <li><span class="flag-icon flag-icon-irl"></span><span class="code">irl</span> - Ireland</li>
+      <li><span class="flag-icon flag-icon-irn"></span><span class="code">irn</span> - Iran (Islamic Republic of Iran)</li>
+      <li><span class="flag-icon flag-icon-irq"></span><span class="code">irq</span> - Iraq</li>
+      <li><span class="flag-icon flag-icon-isl"></span><span class="code">isl</span> - Iceland</li>
+      <li><span class="flag-icon flag-icon-isr"></span><span class="code">isr</span> - Israel</li>
+      <li><span class="flag-icon flag-icon-ita"></span><span class="code">ita</span> - Italy</li>
+      <li><span class="flag-icon flag-icon-jam"></span><span class="code">jam</span> - Jamaica</li>
+      <li><span class="flag-icon flag-icon-jey"></span><span class="code">jey</span> - Jersey</li>
+      <li><span class="flag-icon flag-icon-jor"></span><span class="code">jor</span> - Jordan</li>
+      <li><span class="flag-icon flag-icon-jpn"></span><span class="code">jpn</span> - Japan</li>
+      <li><span class="flag-icon flag-icon-kaz"></span><span class="code">kaz</span> - Kazakstan</li>
+      <li><span class="flag-icon flag-icon-ken"></span><span class="code">ken</span> - Kenya</li>
+      <li><span class="flag-icon flag-icon-kgz"></span><span class="code">kgz</span> - Kyrgyzstan</li>
+      <li><span class="flag-icon flag-icon-khm"></span><span class="code">khm</span> - Cambodia</li>
+      <li><span class="flag-icon flag-icon-kir"></span><span class="code">kir</span> - Kiribati</li>
+      <li><span class="flag-icon flag-icon-kna"></span><span class="code">kna</span> - Saint Kitts and Nevis</li>
+      <li><span class="flag-icon flag-icon-kor"></span><span class="code">kor</span> - Korea (Republic of Korea)</li>
+      <li><span class="flag-icon flag-icon-kos"></span><span class="code">kos</span> - Kosovo (partially recognised state of Serbia)</li>
+      <li><span class="flag-icon flag-icon-kwt"></span><span class="code">kwt</span> - Kuwait</li>
+      <li><span class="flag-icon flag-icon-lao"></span><span class="code">lao</span> - Lao People's Democratic Republic</li>
+      <li><span class="flag-icon flag-icon-lbn"></span><span class="code">lbn</span> - Lebanon</li>
+      <li><span class="flag-icon flag-icon-lbr"></span><span class="code">lbr</span> - Liberia</li>
+      <li><span class="flag-icon flag-icon-lby"></span><span class="code">lby</span> - Libya</li>
+      <li><span class="flag-icon flag-icon-lca"></span><span class="code">lca</span> - Saint Lucia</li>
+      <li><span class="flag-icon flag-icon-lie"></span><span class="code">lie</span> - Liechtenstein</li>
+      <li><span class="flag-icon flag-icon-lka"></span><span class="code">lka</span> - Sri Lanka</li>
+      <li><span class="flag-icon flag-icon-lso"></span><span class="code">lso</span> - Lesotho</li>
+      <li><span class="flag-icon flag-icon-ltu"></span><span class="code">ltu</span> - Lithuania</li>
+      <li><span class="flag-icon flag-icon-lux"></span><span class="code">lux</span> - Luxembourg</li>
+      <li><span class="flag-icon flag-icon-lva"></span><span class="code">lva</span> - Latvia</li>
+      <li><span class="flag-icon flag-icon-mac"></span><span class="code">mac</span> - Macau (Macao Special Administrative Region of China)</li>
+      <li><span class="flag-icon flag-icon-maf"></span><span class="code">maf</span> - Saint Martin (French part)</li>
+      <li><span class="flag-icon flag-icon-mar"></span><span class="code">mar</span> - Marokko</li>
+      <li><span class="flag-icon flag-icon-mco"></span><span class="code">mco</span> - Monaco</li>
+      <li><span class="flag-icon flag-icon-mda"></span><span class="code">mda</span> - Moldova (Republic of Moldova)</li>
+      <li><span class="flag-icon flag-icon-mdg"></span><span class="code">mdg</span> - Madagascar</li>
+      <li><span class="flag-icon flag-icon-mdv"></span><span class="code">mdv</span> - Maldives</li>
+      <li><span class="flag-icon flag-icon-mex"></span><span class="code">mex</span> - Mexico</li>
+      <li><span class="flag-icon flag-icon-mhl"></span><span class="code">mhl</span> - Marshall Islands</li>
+      <li><span class="flag-icon flag-icon-mkd"></span><span class="code">mkd</span> - Makedonia</li>
+      <li><span class="flag-icon flag-icon-mli"></span><span class="code">mli</span> - Mali</li>
+      <li><span class="flag-icon flag-icon-mlt"></span><span class="code">mlt</span> - Malta</li>
+      <li><span class="flag-icon flag-icon-mmr"></span><span class="code">mmr</span> - Myanmar</li>
+      <li><span class="flag-icon flag-icon-mne"></span><span class="code">mne</span> - Montenegro</li>
+      <li><span class="flag-icon flag-icon-mng"></span><span class="code">mng</span> - Mongolia</li>
+      <li><span class="flag-icon flag-icon-mnp"></span><span class="code">mnp</span> - Northern Mariana Islands</li>
+      <li><span class="flag-icon flag-icon-moz"></span><span class="code">moz</span> - Mozambique</li>
+      <li><span class="flag-icon flag-icon-mrt"></span><span class="code">mrt</span> - auritania</li>
+      <li><span class="flag-icon flag-icon-msr"></span><span class="code">msr</span> - Montserrat</li>
+      <li><span class="flag-icon flag-icon-mtq"></span><span class="code">mtq</span> - Martinique</li>
+      <li><span class="flag-icon flag-icon-mus"></span><span class="code">mus</span> - Mauritius</li>
+      <li><span class="flag-icon flag-icon-mwi"></span><span class="code">mwi</span> - Malawi</li>
+      <li><span class="flag-icon flag-icon-mys"></span><span class="code">mys</span> - Malaysia</li>
+      <li><span class="flag-icon flag-icon-myt"></span><span class="code">myt</span> - Mayotte</li>
+      <li><span class="flag-icon flag-icon-nam"></span><span class="code">nam</span> - Namibia</li>
+      <li><span class="flag-icon flag-icon-ncl"></span><span class="code">ncl</span> - New Caledonia</li>
+      <li><span class="flag-icon flag-icon-ner"></span><span class="code">ner</span> - Niger</li>
+      <li><span class="flag-icon flag-icon-nfk"></span><span class="code">nfk</span> - Norfolk Island</li>
+      <li><span class="flag-icon flag-icon-nga"></span><span class="code">nga</span> - Nigeria</li>
+      <li><span class="flag-icon flag-icon-nic"></span><span class="code">nic</span> - Nicaragua</li>
+      <li><span class="flag-icon flag-icon-nir"></span><span class="code">nir</span> - Northern Ireland (country that is part of the United Kingdom)</li>
+      <li><span class="flag-icon flag-icon-niu"></span><span class="code">niu</span> - Niue</li>
+      <li><span class="flag-icon flag-icon-nld"></span><span class="code">nld</span> - Netherlands (Holland)</li>
+      <li><span class="flag-icon flag-icon-nor"></span><span class="code">nor</span> - Norway</li>
+      <li><span class="flag-icon flag-icon-npl"></span><span class="code">npl</span> - Nepal</li>
+      <li><span class="flag-icon flag-icon-nru"></span><span class="code">nru</span> - Nauru</li>
+      <li><span class="flag-icon flag-icon-nzl"></span><span class="code">nzl</span> - New Zealand</li>
+      <li><span class="flag-icon flag-icon-omn"></span><span class="code">omn</span> - Oman</li>
+      <li><span class="flag-icon flag-icon-pak"></span><span class="code">pak</span> - Pakistan</li>
+      <li><span class="flag-icon flag-icon-pan"></span><span class="code">pan</span> - Panama</li>
+      <li><span class="flag-icon flag-icon-pcn"></span><span class="code">pcn</span> - Pitcairn</li>
+      <li><span class="flag-icon flag-icon-per"></span><span class="code">per</span> - Peru</li>
+      <li><span class="flag-icon flag-icon-phl"></span><span class="code">phl</span> - Phillipines</li>
+      <li><span class="flag-icon flag-icon-plw"></span><span class="code">plw</span> - Palau</li>
+      <li><span class="flag-icon flag-icon-png"></span><span class="code">png</span> - Papua New Guinea</li>
+      <li><span class="flag-icon flag-icon-pol"></span><span class="code">pol</span> - Poland</li>
+      <li><span class="flag-icon flag-icon-pri"></span><span class="code">pri</span> - Puerto Rico</li>
+      <li><span class="flag-icon flag-icon-prk"></span><span class="code">prk</span> - Korea (Democratic People's Republic of Korea)</li>
+      <li><span class="flag-icon flag-icon-prt"></span><span class="code">prt</span> - Portugal</li>
+      <li><span class="flag-icon flag-icon-pry"></span><span class="code">pry</span> - Paraguay</li>
+      <li><span class="flag-icon flag-icon-pse"></span><span class="code">pse</span> - State of Palestine</li>
+      <li><span class="flag-icon flag-icon-pyf"></span><span class="code">pyf</span> - French Polynesia</li>
+      <li><span class="flag-icon flag-icon-qat"></span><span class="code">qat</span> - Qatar</li>
+      <li><span class="flag-icon flag-icon-reu"></span><span class="code">reu</span> - Réunion</li>
+      <li><span class="flag-icon flag-icon-rou"></span><span class="code">rou</span> - Roumania</li>
+      <li><span class="flag-icon flag-icon-rus"></span><span class="code">rus</span> - Russia (russian Federation)</li>
+      <li><span class="flag-icon flag-icon-rwa"></span><span class="code">rwa</span> - Rwanda</li>
+      <li><span class="flag-icon flag-icon-sau"></span><span class="code">sau</span> - Saudi Arabia</li>
+      <li><span class="flag-icon flag-icon-sco"></span><span class="code">sco</span> - Scotland (country that is part of the United Kingdom)</li>
+      <li><span class="flag-icon flag-icon-sdn"></span><span class="code">sdn</span> - Sudan</li>
+      <li><span class="flag-icon flag-icon-sen"></span><span class="code">sen</span> - Senegal</li>
+      <li><span class="flag-icon flag-icon-sgp"></span><span class="code">sgp</span> - Singapore</li>
+      <li><span class="flag-icon flag-icon-sgs"></span><span class="code">sgs</span> - South Georgia and the South Sandwich Islands</li>
+      <li><span class="flag-icon flag-icon-shn"></span><span class="code">shn</span> - Saint Helena, Ascension and Tristan da Cunha</li>
+      <li><span class="flag-icon flag-icon-sjm"></span><span class="code">sjm</span> - Svalbard and Jan Mayen</li>
+      <li><span class="flag-icon flag-icon-slb"></span><span class="code">slb</span> - Solomon Islands</li>
+      <li><span class="flag-icon flag-icon-sle"></span><span class="code">sle</span> - Sierra Leone</li>
+      <li><span class="flag-icon flag-icon-slv"></span><span class="code">slv</span> - El Salvador</li>
+      <li><span class="flag-icon flag-icon-smr"></span><span class="code">smr</span> - San Marino</li>
+      <li><span class="flag-icon flag-icon-som"></span><span class="code">som</span> - Somalia</li>
+      <li><span class="flag-icon flag-icon-spm"></span><span class="code">spm</span> - Saint Pierre and Miquelon</li>
+      <li><span class="flag-icon flag-icon-srb"></span><span class="code">srb</span> - Serbia</li>
+      <li><span class="flag-icon flag-icon-ssd"></span><span class="code">ssd</span> - South Sudan</li>
+      <li><span class="flag-icon flag-icon-stp"></span><span class="code">stp</span> - Sao Tome and Principe</li>
+      <li><span class="flag-icon flag-icon-sun"></span><span class="code">sun</span> - Union of Soviet Socialist Republics (USSR)</li>
+      <li><span class="flag-icon flag-icon-sur"></span><span class="code">sur</span> - Suriname</li>
+      <li><span class="flag-icon flag-icon-svk"></span><span class="code">svk</span> - Slovakia</li>
+      <li><span class="flag-icon flag-icon-svn"></span><span class="code">svn</span> - Slovenia</li>
+      <li><span class="flag-icon flag-icon-swe"></span><span class="code">swe</span> - Sweden</li>
+      <li><span class="flag-icon flag-icon-swz"></span><span class="code">swz</span> - Swaziland</li>
+      <li><span class="flag-icon flag-icon-sxm"></span><span class="code">sxm</span> - Sint Maarten (Dutch part)</li>
+      <li><span class="flag-icon flag-icon-syc"></span><span class="code">syc</span> - Seychelles</li>
+      <li><span class="flag-icon flag-icon-syr"></span><span class="code">syr</span> - Syrian Arab Republic</li>
+      <li><span class="flag-icon flag-icon-tca"></span><span class="code">tca</span> - Turks and Caicos Islands</li>
+      <li><span class="flag-icon flag-icon-tcd"></span><span class="code">tcd</span> - Chad</li>
+      <li><span class="flag-icon flag-icon-tgo"></span><span class="code">tgo</span> - Togo</li>
+      <li><span class="flag-icon flag-icon-tha"></span><span class="code">tha</span> - Thailand</li>
+      <li><span class="flag-icon flag-icon-tjk"></span><span class="code">tjk</span> - Tajikistan</li>
+      <li><span class="flag-icon flag-icon-tkl"></span><span class="code">tkl</span> - Tokelau</li>
+      <li><span class="flag-icon flag-icon-tkm"></span><span class="code">tkm</span> - Turkmenistan</li>
+      <li><span class="flag-icon flag-icon-tls"></span><span class="code">tls</span> - Timor-Leste</li>
+      <li><span class="flag-icon flag-icon-ton"></span><span class="code">ton</span> - Tonga</li>
+      <li><span class="flag-icon flag-icon-tto"></span><span class="code">tto</span> - Trinidad and Tobago</li>
+      <li><span class="flag-icon flag-icon-tun"></span><span class="code">tun</span> - Tunisia</li>
+      <li><span class="flag-icon flag-icon-tur"></span><span class="code">tur</span> - Turkey</li>
+      <li><span class="flag-icon flag-icon-tuv"></span><span class="code">tuv</span> - Tuvalu</li>
+      <li><span class="flag-icon flag-icon-twn"></span><span class="code">twn</span> - Taiwan, Province of China</li>
+      <li><span class="flag-icon flag-icon-tza"></span><span class="code">tza</span> - United Republic of Tanzania</li>
+      <li><span class="flag-icon flag-icon-uga"></span><span class="code">uga</span> - Uganda</li>
+      <li><span class="flag-icon flag-icon-ukr"></span><span class="code">ukr</span> - Ukraine</li>
+      <li><span class="flag-icon flag-icon-umi"></span><span class="code">umi</span> - United States Minor Outlying Islands</li>
+      <li><span class="flag-icon flag-icon-ury"></span><span class="code">ury</span> - Uruguay</li>
+      <li><span class="flag-icon flag-icon-usa"></span><span class="code">usa</span> - United States of America (USA)</li>
+      <li><span class="flag-icon flag-icon-uzb"></span><span class="code">uzb</span> - Uzbekistan</li>
+      <li><span class="flag-icon flag-icon-vat"></span><span class="code">vat</span> - Vanuatu</li>
+      <li><span class="flag-icon flag-icon-vct"></span><span class="code">vct</span> - Vatican</li>
+      <li><span class="flag-icon flag-icon-ven"></span><span class="code">ven</span> - Venezuela (Bolivarian Republic of Venezuela)</li>
+      <li><span class="flag-icon flag-icon-vgb"></span><span class="code">vgb</span> - Virgin Islands (British)</li>
+      <li><span class="flag-icon flag-icon-vir"></span><span class="code">vir</span> - Virgin Islands (U.S.)</li>
+      <li><span class="flag-icon flag-icon-vnm"></span><span class="code">vnm</span> - Vietnam</li>
+      <li><span class="flag-icon flag-icon-vut"></span><span class="code">vut</span> - Vanuatu</li>
+      <li><span class="flag-icon flag-icon-wal"></span><span class="code">wal</span> - Wales (country that is part of the United Kingdom)</li>
+      <li><span class="flag-icon flag-icon-wlf"></span><span class="code">wlf</span> - Wallis and Futuna</li>
+      <li><span class="flag-icon flag-icon-wsm"></span><span class="code">wsm</span> - Samoa</li>
+      <li><span class="flag-icon flag-icon-yem"></span><span class="code">yem</span> - Yemen</li>
+      <li><span class="flag-icon flag-icon-zaf"></span><span class="code">zaf</span> - South Africa</li>
+      <li><span class="flag-icon flag-icon-zmb"></span><span class="code">zmb</span> - Zambia</li>
+      <li><span class="flag-icon flag-icon-zwe"></span><span class="code">zwe</span> - Zimbabwe</li>
+    </ul>
+  </div>
+  <a href="https://github.com/alexsobolenko/flag-icons/archive/master.zip" class="link">Download</a>
+</body>
+</html>
