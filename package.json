@@ -1,0 +1,16 @@
+{
+  "name": "alexsobolenko/flag-icons",
+  "version": "1.1.0",
+  "description": "Flag-icons is a library with svg flags",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexsobolenko/flag-icons.git"
+  },
+  "author": "Alexei Sobolenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexsobolenko/flag-icons/issues"
+  },
+  "homepage": "https://alexsobolenko.github.io/flag-icons/"
+}
+
